@@ -19,6 +19,8 @@ jobs:
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+      - name: Build
+        run: hugo --gc --minify --cleanDestinationDir
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           version: '276.0.0'
