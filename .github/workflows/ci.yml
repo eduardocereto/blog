@@ -29,6 +29,6 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - run: gsutil -m rsync -d -c -r public gs://blog.cereto.com
-      # - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://blog.cereto.com/**/*.html
-      # - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://blog.cereto.com/js/*.js
-      # - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://blog.cereto.com/css/*.css
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" "gs://blog.cereto.com/**/*.html"
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" "gs://blog.cereto.com/js/*.js"
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" "gs://blog.cereto.com/css/*.css"
