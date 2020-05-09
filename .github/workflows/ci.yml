@@ -21,6 +21,8 @@ jobs:
           hugo-version: '0.70.0'
       - name: Prepare Hugo
         run: git submodule sync && git submodule update --init
+      - name: Build Hugo
+        run: hugo --minify --gc
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
