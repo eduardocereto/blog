@@ -29,5 +29,6 @@ There are still a few steps to go though. Listing here for future reference.
  - Customize Theme
  - Write an About page
  - Figure out what the heck are archetypes
+ - <s>Maybe use a service such as https://forestry.io/ as a CMS.</s> - I tried, not for me.
 
  Lots of topics for future posts :).
