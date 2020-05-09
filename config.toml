@@ -1,5 +1,5 @@
 baseurl = "https://blog.cereto.com"
-title = "johndoe"
+title = "Eduardo Cereto Carvalho"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -11,7 +11,7 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "eduardocereto"
 
 [params]
     author = "Eduardo Cereto Carvalho"
@@ -23,7 +23,7 @@ disqusShortname = "yourdiscussshortname"
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
 
-    footercontent = "Enter a text here."
+    footercontent = "Such is life"
 
     hidecredits = false
     hidecopyright = false
