@@ -21,9 +21,9 @@ jobs:
           hugo-version: '0.70.0'
       - name: Prepare Hugo
         run: git submodule sync && git submodule update --init
-      - name: Build
-        run: hugo --gc --minify --cleanDestinationDir
-      # Fetch Hugo to Firebase docker image
-      - uses: wajahatkarim3/Hugo-On-Fire@master
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
